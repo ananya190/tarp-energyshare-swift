@@ -11,6 +11,27 @@
 		312BFA642AFA195400B6BF88 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312BFA632AFA195400B6BF88 /* ContentView.swift */; };
 		312BFA662AFA195600B6BF88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 312BFA652AFA195600B6BF88 /* Assets.xcassets */; };
 		312BFA6A2AFA195600B6BF88 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 312BFA692AFA195600B6BF88 /* Preview Assets.xcassets */; };
+		312BFA752AFA19B900B6BF88 /* EnergyShareTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312BFA742AFA19B800B6BF88 /* EnergyShareTabBar.swift */; };
+		312BFA782AFA1A3700B6BF88 /* EnergyShareTabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312BFA772AFA1A3700B6BF88 /* EnergyShareTabItem.swift */; };
+		312BFA7D2AFA1C6600B6BF88 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312BFA7C2AFA1C6600B6BF88 /* Constants.swift */; };
+		312BFA822AFA27DE00B6BF88 /* BuyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312BFA812AFA27DE00B6BF88 /* BuyCard.swift */; };
+		312BFA842AFA27F800B6BF88 /* BuyOffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312BFA832AFA27F800B6BF88 /* BuyOffer.swift */; };
+		312BFA862AFA280200B6BF88 /* SellOffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312BFA852AFA280200B6BF88 /* SellOffer.swift */; };
+		312BFA8C2AFA2B9100B6BF88 /* metamask-ios-sdk in Frameworks */ = {isa = PBXBuildFile; productRef = 312BFA8B2AFA2B9100B6BF88 /* metamask-ios-sdk */; };
+		312BFA8F2AFA2E0800B6BF88 /* Web3 in Frameworks */ = {isa = PBXBuildFile; productRef = 312BFA8E2AFA2E0800B6BF88 /* Web3 */; };
+		312BFA912AFA2E0800B6BF88 /* Web3ContractABI in Frameworks */ = {isa = PBXBuildFile; productRef = 312BFA902AFA2E0800B6BF88 /* Web3ContractABI */; };
+		312BFA932AFA2E0800B6BF88 /* Web3PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 312BFA922AFA2E0800B6BF88 /* Web3PromiseKit */; };
+		312BFA952AFA2E2800B6BF88 /* EnergyShareABI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312BFA942AFA2E2800B6BF88 /* EnergyShareABI.swift */; };
+		312BFA972AFA301000B6BF88 /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312BFA962AFA301000B6BF88 /* DummyData.swift */; };
+		312BFA992AFA324C00B6BF88 /* BuyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312BFA982AFA324C00B6BF88 /* BuyView.swift */; };
+		312BFA9B2AFA381C00B6BF88 /* PlaceBidView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312BFA9A2AFA381C00B6BF88 /* PlaceBidView.swift */; };
+		312BFAA02AFA43A800B6BF88 /* SellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312BFA9F2AFA43A800B6BF88 /* SellView.swift */; };
+		312BFAA22AFA45D000B6BF88 /* BidView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312BFAA12AFA45D000B6BF88 /* BidView.swift */; };
+		312BFAA42AFA45D900B6BF88 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312BFAA32AFA45D900B6BF88 /* UserView.swift */; };
+		31C0D8572AFF6DEB0000653F /* SmartMeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C0D8562AFF6DEB0000653F /* SmartMeter.swift */; };
+		31C0D8592AFF74730000653F /* BidCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C0D8582AFF74730000653F /* BidCard.swift */; };
+		31C0D85B2AFF77210000653F /* SellCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C0D85A2AFF77210000653F /* SellCard.swift */; };
+		31C0D85D2AFF7E010000653F /* AddSaleOfferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C0D85C2AFF7E010000653F /* AddSaleOfferView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +41,23 @@
 		312BFA652AFA195600B6BF88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		312BFA672AFA195600B6BF88 /* energyshare_tarp_swift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = energyshare_tarp_swift.entitlements; sourceTree = "<group>"; };
 		312BFA692AFA195600B6BF88 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		312BFA742AFA19B800B6BF88 /* EnergyShareTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyShareTabBar.swift; sourceTree = "<group>"; };
+		312BFA772AFA1A3700B6BF88 /* EnergyShareTabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyShareTabItem.swift; sourceTree = "<group>"; };
+		312BFA7C2AFA1C6600B6BF88 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		312BFA812AFA27DE00B6BF88 /* BuyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyCard.swift; sourceTree = "<group>"; };
+		312BFA832AFA27F800B6BF88 /* BuyOffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyOffer.swift; sourceTree = "<group>"; };
+		312BFA852AFA280200B6BF88 /* SellOffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellOffer.swift; sourceTree = "<group>"; };
+		312BFA942AFA2E2800B6BF88 /* EnergyShareABI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyShareABI.swift; sourceTree = "<group>"; };
+		312BFA962AFA301000B6BF88 /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
+		312BFA982AFA324C00B6BF88 /* BuyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyView.swift; sourceTree = "<group>"; };
+		312BFA9A2AFA381C00B6BF88 /* PlaceBidView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceBidView.swift; sourceTree = "<group>"; };
+		312BFA9F2AFA43A800B6BF88 /* SellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellView.swift; sourceTree = "<group>"; };
+		312BFAA12AFA45D000B6BF88 /* BidView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BidView.swift; sourceTree = "<group>"; };
+		312BFAA32AFA45D900B6BF88 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		31C0D8562AFF6DEB0000653F /* SmartMeter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartMeter.swift; sourceTree = "<group>"; };
+		31C0D8582AFF74730000653F /* BidCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BidCard.swift; sourceTree = "<group>"; };
+		31C0D85A2AFF77210000653F /* SellCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellCard.swift; sourceTree = "<group>"; };
+		31C0D85C2AFF7E010000653F /* AddSaleOfferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSaleOfferView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +65,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				312BFA912AFA2E0800B6BF88 /* Web3ContractABI in Frameworks */,
+				312BFA8C2AFA2B9100B6BF88 /* metamask-ios-sdk in Frameworks */,
+				312BFA932AFA2E0800B6BF88 /* Web3PromiseKit in Frameworks */,
+				312BFA8F2AFA2E0800B6BF88 /* Web3 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +94,10 @@
 		312BFA602AFA195400B6BF88 /* energyshare-tarp-swift */ = {
 			isa = PBXGroup;
 			children = (
+				312BFA732AFA198B00B6BF88 /* Utilities */,
+				312BFA722AFA198200B6BF88 /* View Models */,
+				312BFA712AFA197D00B6BF88 /* Views */,
+				312BFA702AFA196E00B6BF88 /* Models */,
 				312BFA612AFA195400B6BF88 /* energyshare_tarp_swiftApp.swift */,
 				312BFA632AFA195400B6BF88 /* ContentView.swift */,
 				312BFA652AFA195600B6BF88 /* Assets.xcassets */,
@@ -67,6 +113,99 @@
 				312BFA692AFA195600B6BF88 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		312BFA702AFA196E00B6BF88 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				312BFA832AFA27F800B6BF88 /* BuyOffer.swift */,
+				312BFA852AFA280200B6BF88 /* SellOffer.swift */,
+				31C0D8562AFF6DEB0000653F /* SmartMeter.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		312BFA712AFA197D00B6BF88 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				312BFA9E2AFA383A00B6BF88 /* UserViews */,
+				312BFA9D2AFA383200B6BF88 /* BidViews */,
+				312BFA9C2AFA382A00B6BF88 /* SellViews */,
+				312BFA802AFA27CA00B6BF88 /* BuyViews */,
+				312BFA7E2AFA26EE00B6BF88 /* Common */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		312BFA722AFA198200B6BF88 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		312BFA732AFA198B00B6BF88 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				312BFA7C2AFA1C6600B6BF88 /* Constants.swift */,
+				312BFA942AFA2E2800B6BF88 /* EnergyShareABI.swift */,
+				312BFA962AFA301000B6BF88 /* DummyData.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		312BFA762AFA1A2000B6BF88 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				312BFA742AFA19B800B6BF88 /* EnergyShareTabBar.swift */,
+				312BFA772AFA1A3700B6BF88 /* EnergyShareTabItem.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		312BFA7E2AFA26EE00B6BF88 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				312BFA762AFA1A2000B6BF88 /* TabBar */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		312BFA802AFA27CA00B6BF88 /* BuyViews */ = {
+			isa = PBXGroup;
+			children = (
+				312BFA812AFA27DE00B6BF88 /* BuyCard.swift */,
+				312BFA982AFA324C00B6BF88 /* BuyView.swift */,
+				312BFA9A2AFA381C00B6BF88 /* PlaceBidView.swift */,
+			);
+			path = BuyViews;
+			sourceTree = "<group>";
+		};
+		312BFA9C2AFA382A00B6BF88 /* SellViews */ = {
+			isa = PBXGroup;
+			children = (
+				312BFA9F2AFA43A800B6BF88 /* SellView.swift */,
+				31C0D85A2AFF77210000653F /* SellCard.swift */,
+				31C0D85C2AFF7E010000653F /* AddSaleOfferView.swift */,
+			);
+			path = SellViews;
+			sourceTree = "<group>";
+		};
+		312BFA9D2AFA383200B6BF88 /* BidViews */ = {
+			isa = PBXGroup;
+			children = (
+				312BFAA12AFA45D000B6BF88 /* BidView.swift */,
+				31C0D8582AFF74730000653F /* BidCard.swift */,
+			);
+			path = BidViews;
+			sourceTree = "<group>";
+		};
+		312BFA9E2AFA383A00B6BF88 /* UserViews */ = {
+			isa = PBXGroup;
+			children = (
+				312BFAA32AFA45D900B6BF88 /* UserView.swift */,
+			);
+			path = UserViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +224,12 @@
 			dependencies = (
 			);
 			name = "energyshare-tarp-swift";
+			packageProductDependencies = (
+				312BFA8B2AFA2B9100B6BF88 /* metamask-ios-sdk */,
+				312BFA8E2AFA2E0800B6BF88 /* Web3 */,
+				312BFA902AFA2E0800B6BF88 /* Web3ContractABI */,
+				312BFA922AFA2E0800B6BF88 /* Web3PromiseKit */,
+			);
 			productName = "energyshare-tarp-swift";
 			productReference = 312BFA5E2AFA195400B6BF88 /* energyshare-tarp-swift.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +258,10 @@
 				Base,
 			);
 			mainGroup = 312BFA552AFA195400B6BF88;
+			packageReferences = (
+				312BFA8A2AFA2B9100B6BF88 /* XCRemoteSwiftPackageReference "metamask-ios-sdk" */,
+				312BFA8D2AFA2E0800B6BF88 /* XCRemoteSwiftPackageReference "Web3.swift" */,
+			);
 			productRefGroup = 312BFA5F2AFA195400B6BF88 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,8 +288,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31C0D85D2AFF7E010000653F /* AddSaleOfferView.swift in Sources */,
+				312BFA822AFA27DE00B6BF88 /* BuyCard.swift in Sources */,
+				312BFA7D2AFA1C6600B6BF88 /* Constants.swift in Sources */,
+				312BFA752AFA19B900B6BF88 /* EnergyShareTabBar.swift in Sources */,
+				312BFAA02AFA43A800B6BF88 /* SellView.swift in Sources */,
+				312BFA952AFA2E2800B6BF88 /* EnergyShareABI.swift in Sources */,
+				312BFA9B2AFA381C00B6BF88 /* PlaceBidView.swift in Sources */,
+				312BFAA22AFA45D000B6BF88 /* BidView.swift in Sources */,
+				312BFAA42AFA45D900B6BF88 /* UserView.swift in Sources */,
 				312BFA642AFA195400B6BF88 /* ContentView.swift in Sources */,
+				31C0D85B2AFF77210000653F /* SellCard.swift in Sources */,
+				312BFA862AFA280200B6BF88 /* SellOffer.swift in Sources */,
+				312BFA842AFA27F800B6BF88 /* BuyOffer.swift in Sources */,
+				312BFA782AFA1A3700B6BF88 /* EnergyShareTabItem.swift in Sources */,
+				312BFA972AFA301000B6BF88 /* DummyData.swift in Sources */,
+				312BFA992AFA324C00B6BF88 /* BuyView.swift in Sources */,
 				312BFA622AFA195400B6BF88 /* energyshare_tarp_swiftApp.swift in Sources */,
+				31C0D8592AFF74730000653F /* BidCard.swift in Sources */,
+				31C0D8572AFF6DEB0000653F /* SmartMeter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +525,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		312BFA8A2AFA2B9100B6BF88 /* XCRemoteSwiftPackageReference "metamask-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MetaMask/metamask-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.2;
+			};
+		};
+		312BFA8D2AFA2E0800B6BF88 /* XCRemoteSwiftPackageReference "Web3.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Boilertalk/Web3.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.8.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		312BFA8B2AFA2B9100B6BF88 /* metamask-ios-sdk */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 312BFA8A2AFA2B9100B6BF88 /* XCRemoteSwiftPackageReference "metamask-ios-sdk" */;
+			productName = "metamask-ios-sdk";
+		};
+		312BFA8E2AFA2E0800B6BF88 /* Web3 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 312BFA8D2AFA2E0800B6BF88 /* XCRemoteSwiftPackageReference "Web3.swift" */;
+			productName = Web3;
+		};
+		312BFA902AFA2E0800B6BF88 /* Web3ContractABI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 312BFA8D2AFA2E0800B6BF88 /* XCRemoteSwiftPackageReference "Web3.swift" */;
+			productName = Web3ContractABI;
+		};
+		312BFA922AFA2E0800B6BF88 /* Web3PromiseKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 312BFA8D2AFA2E0800B6BF88 /* XCRemoteSwiftPackageReference "Web3.swift" */;
+			productName = Web3PromiseKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 312BFA562AFA195400B6BF88 /* Project object */;
 }

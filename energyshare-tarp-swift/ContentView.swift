@@ -8,14 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var tabSelected: Int = 0
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            VStack {
+                VStack {
+                    switch(tabSelected) {
+                    case 0:
+                        BidView()
+                    case 1:
+                        BuyView()
+                    case 2:
+                        SellView()
+                    case 3:
+                        UserView()
+                    default:
+                        UserView()
+                    }
+                }
+                .padding()
+                Spacer()
+                EnergyShareTabBar(tabSelected: $tabSelected)
+            }
         }
-        .padding()
     }
 }
 
