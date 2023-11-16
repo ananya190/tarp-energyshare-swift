@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31045E842B06564B002C9478 /* ContractComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31045E832B06564B002C9478 /* ContractComponents.swift */; };
+		31045E862B066389002C9478 /* MetaMaskRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31045E852B066389002C9478 /* MetaMaskRepo.swift */; };
+		31045E892B067CD7002C9478 /* web3swift in Frameworks */ = {isa = PBXBuildFile; productRef = 31045E882B067CD7002C9478 /* web3swift */; };
+		31045E8B2B0682EB002C9478 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31045E8A2B0682EB002C9478 /* Secrets.swift */; };
 		312BFA622AFA195400B6BF88 /* energyshare_tarp_swiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312BFA612AFA195400B6BF88 /* energyshare_tarp_swiftApp.swift */; };
 		312BFA642AFA195400B6BF88 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312BFA632AFA195400B6BF88 /* ContentView.swift */; };
 		312BFA662AFA195600B6BF88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 312BFA652AFA195600B6BF88 /* Assets.xcassets */; };
@@ -18,10 +22,6 @@
 		312BFA842AFA27F800B6BF88 /* BuyOffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312BFA832AFA27F800B6BF88 /* BuyOffer.swift */; };
 		312BFA862AFA280200B6BF88 /* SellOffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312BFA852AFA280200B6BF88 /* SellOffer.swift */; };
 		312BFA8C2AFA2B9100B6BF88 /* metamask-ios-sdk in Frameworks */ = {isa = PBXBuildFile; productRef = 312BFA8B2AFA2B9100B6BF88 /* metamask-ios-sdk */; };
-		312BFA8F2AFA2E0800B6BF88 /* Web3 in Frameworks */ = {isa = PBXBuildFile; productRef = 312BFA8E2AFA2E0800B6BF88 /* Web3 */; };
-		312BFA912AFA2E0800B6BF88 /* Web3ContractABI in Frameworks */ = {isa = PBXBuildFile; productRef = 312BFA902AFA2E0800B6BF88 /* Web3ContractABI */; };
-		312BFA932AFA2E0800B6BF88 /* Web3PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 312BFA922AFA2E0800B6BF88 /* Web3PromiseKit */; };
-		312BFA952AFA2E2800B6BF88 /* EnergyShareABI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312BFA942AFA2E2800B6BF88 /* EnergyShareABI.swift */; };
 		312BFA972AFA301000B6BF88 /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312BFA962AFA301000B6BF88 /* DummyData.swift */; };
 		312BFA992AFA324C00B6BF88 /* BuyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312BFA982AFA324C00B6BF88 /* BuyView.swift */; };
 		312BFA9B2AFA381C00B6BF88 /* PlaceBidView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312BFA9A2AFA381C00B6BF88 /* PlaceBidView.swift */; };
@@ -35,6 +35,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		31045E832B06564B002C9478 /* ContractComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractComponents.swift; sourceTree = "<group>"; };
+		31045E852B066389002C9478 /* MetaMaskRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaMaskRepo.swift; sourceTree = "<group>"; };
+		31045E8A2B0682EB002C9478 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		312BFA5E2AFA195400B6BF88 /* energyshare-tarp-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "energyshare-tarp-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		312BFA612AFA195400B6BF88 /* energyshare_tarp_swiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = energyshare_tarp_swiftApp.swift; sourceTree = "<group>"; };
 		312BFA632AFA195400B6BF88 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -47,7 +50,6 @@
 		312BFA812AFA27DE00B6BF88 /* BuyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyCard.swift; sourceTree = "<group>"; };
 		312BFA832AFA27F800B6BF88 /* BuyOffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyOffer.swift; sourceTree = "<group>"; };
 		312BFA852AFA280200B6BF88 /* SellOffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellOffer.swift; sourceTree = "<group>"; };
-		312BFA942AFA2E2800B6BF88 /* EnergyShareABI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyShareABI.swift; sourceTree = "<group>"; };
 		312BFA962AFA301000B6BF88 /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
 		312BFA982AFA324C00B6BF88 /* BuyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyView.swift; sourceTree = "<group>"; };
 		312BFA9A2AFA381C00B6BF88 /* PlaceBidView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceBidView.swift; sourceTree = "<group>"; };
@@ -65,16 +67,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				312BFA912AFA2E0800B6BF88 /* Web3ContractABI in Frameworks */,
 				312BFA8C2AFA2B9100B6BF88 /* metamask-ios-sdk in Frameworks */,
-				312BFA932AFA2E0800B6BF88 /* Web3PromiseKit in Frameworks */,
-				312BFA8F2AFA2E0800B6BF88 /* Web3 in Frameworks */,
+				31045E892B067CD7002C9478 /* web3swift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		31045E822B065627002C9478 /* SmartContract */ = {
+			isa = PBXGroup;
+			children = (
+				31045E832B06564B002C9478 /* ContractComponents.swift */,
+			);
+			path = SmartContract;
+			sourceTree = "<group>";
+		};
 		312BFA552AFA195400B6BF88 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +102,7 @@
 		312BFA602AFA195400B6BF88 /* energyshare-tarp-swift */ = {
 			isa = PBXGroup;
 			children = (
+				31045E822B065627002C9478 /* SmartContract */,
 				312BFA732AFA198B00B6BF88 /* Utilities */,
 				312BFA722AFA198200B6BF88 /* View Models */,
 				312BFA712AFA197D00B6BF88 /* Views */,
@@ -140,6 +149,7 @@
 		312BFA722AFA198200B6BF88 /* View Models */ = {
 			isa = PBXGroup;
 			children = (
+				31045E852B066389002C9478 /* MetaMaskRepo.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -148,8 +158,8 @@
 			isa = PBXGroup;
 			children = (
 				312BFA7C2AFA1C6600B6BF88 /* Constants.swift */,
-				312BFA942AFA2E2800B6BF88 /* EnergyShareABI.swift */,
 				312BFA962AFA301000B6BF88 /* DummyData.swift */,
+				31045E8A2B0682EB002C9478 /* Secrets.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -226,9 +236,7 @@
 			name = "energyshare-tarp-swift";
 			packageProductDependencies = (
 				312BFA8B2AFA2B9100B6BF88 /* metamask-ios-sdk */,
-				312BFA8E2AFA2E0800B6BF88 /* Web3 */,
-				312BFA902AFA2E0800B6BF88 /* Web3ContractABI */,
-				312BFA922AFA2E0800B6BF88 /* Web3PromiseKit */,
+				31045E882B067CD7002C9478 /* web3swift */,
 			);
 			productName = "energyshare-tarp-swift";
 			productReference = 312BFA5E2AFA195400B6BF88 /* energyshare-tarp-swift.app */;
@@ -260,7 +268,7 @@
 			mainGroup = 312BFA552AFA195400B6BF88;
 			packageReferences = (
 				312BFA8A2AFA2B9100B6BF88 /* XCRemoteSwiftPackageReference "metamask-ios-sdk" */,
-				312BFA8D2AFA2E0800B6BF88 /* XCRemoteSwiftPackageReference "Web3.swift" */,
+				31045E872B067CD7002C9478 /* XCRemoteSwiftPackageReference "web3swift" */,
 			);
 			productRefGroup = 312BFA5F2AFA195400B6BF88 /* Products */;
 			projectDirPath = "";
@@ -290,10 +298,10 @@
 			files = (
 				31C0D85D2AFF7E010000653F /* AddSaleOfferView.swift in Sources */,
 				312BFA822AFA27DE00B6BF88 /* BuyCard.swift in Sources */,
+				31045E862B066389002C9478 /* MetaMaskRepo.swift in Sources */,
 				312BFA7D2AFA1C6600B6BF88 /* Constants.swift in Sources */,
 				312BFA752AFA19B900B6BF88 /* EnergyShareTabBar.swift in Sources */,
 				312BFAA02AFA43A800B6BF88 /* SellView.swift in Sources */,
-				312BFA952AFA2E2800B6BF88 /* EnergyShareABI.swift in Sources */,
 				312BFA9B2AFA381C00B6BF88 /* PlaceBidView.swift in Sources */,
 				312BFAA22AFA45D000B6BF88 /* BidView.swift in Sources */,
 				312BFAA42AFA45D900B6BF88 /* UserView.swift in Sources */,
@@ -304,9 +312,11 @@
 				312BFA782AFA1A3700B6BF88 /* EnergyShareTabItem.swift in Sources */,
 				312BFA972AFA301000B6BF88 /* DummyData.swift in Sources */,
 				312BFA992AFA324C00B6BF88 /* BuyView.swift in Sources */,
+				31045E8B2B0682EB002C9478 /* Secrets.swift in Sources */,
 				312BFA622AFA195400B6BF88 /* energyshare_tarp_swiftApp.swift in Sources */,
 				31C0D8592AFF74730000653F /* BidCard.swift in Sources */,
 				31C0D8572AFF6DEB0000653F /* SmartMeter.swift in Sources */,
+				31045E842B06564B002C9478 /* ContractComponents.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,6 +537,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		31045E872B067CD7002C9478 /* XCRemoteSwiftPackageReference "web3swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/web3swift-team/web3swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.0;
+			};
+		};
 		312BFA8A2AFA2B9100B6BF88 /* XCRemoteSwiftPackageReference "metamask-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/MetaMask/metamask-ios-sdk";
@@ -535,36 +553,18 @@
 				minimumVersion = 0.2.2;
 			};
 		};
-		312BFA8D2AFA2E0800B6BF88 /* XCRemoteSwiftPackageReference "Web3.swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Boilertalk/Web3.swift.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.8.4;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		31045E882B067CD7002C9478 /* web3swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 31045E872B067CD7002C9478 /* XCRemoteSwiftPackageReference "web3swift" */;
+			productName = web3swift;
+		};
 		312BFA8B2AFA2B9100B6BF88 /* metamask-ios-sdk */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 312BFA8A2AFA2B9100B6BF88 /* XCRemoteSwiftPackageReference "metamask-ios-sdk" */;
 			productName = "metamask-ios-sdk";
-		};
-		312BFA8E2AFA2E0800B6BF88 /* Web3 */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 312BFA8D2AFA2E0800B6BF88 /* XCRemoteSwiftPackageReference "Web3.swift" */;
-			productName = Web3;
-		};
-		312BFA902AFA2E0800B6BF88 /* Web3ContractABI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 312BFA8D2AFA2E0800B6BF88 /* XCRemoteSwiftPackageReference "Web3.swift" */;
-			productName = Web3ContractABI;
-		};
-		312BFA922AFA2E0800B6BF88 /* Web3PromiseKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 312BFA8D2AFA2E0800B6BF88 /* XCRemoteSwiftPackageReference "Web3.swift" */;
-			productName = Web3PromiseKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

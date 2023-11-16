@@ -8,13 +8,17 @@
 import SwiftUI
 
 struct BuyView: View {
-    var sellOfferList: [SellOffer] = DummyData.sellOfferList
+    var sellOfferList: [SellOffer] = DummyData.sellOfferList.filter({ $0.seller != "abc123"})
     var buyOfferList: [BuyOffer] = DummyData.buyOfferList
     var body: some View {
         NavigationStack {
-            ScrollView {
-                ForEach(sellOfferList) { sellOffer in
-                    BuyCard(sellOffer: sellOffer, bestBuyOffer: sellOffer.bestBuyOfferId > 0 ? buyOfferList.first(where: {$0.id == sellOffer.bestBuyOfferId}) : nil)
+            VStack {
+                Text("Buy View")
+                    .font(.headline)
+                ScrollView {
+                    ForEach(sellOfferList) { sellOffer in
+                        BuyCard(sellOffer: sellOffer, bestBuyOffer: sellOffer.bestBuyOfferId > 0 ? buyOfferList.first(where: {$0.id == sellOffer.bestBuyOfferId}) : nil)
+                    }
                 }
             }
         }

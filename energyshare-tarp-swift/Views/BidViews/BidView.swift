@@ -8,13 +8,16 @@
 import SwiftUI
 
 struct BidView: View {
-    var userBuyOffers: [BuyOffer] = DummyData.buyOfferList.filter( {$0.buyer == "xyz123"})
+    var userBuyOffers: [BuyOffer] = DummyData.buyOfferList.filter( {$0.buyer == "abc123"})
     var body: some View {
         VStack {
             Text("Bids")
                 .font(.headline)
                 .padding()
         }
+        .onAppear(perform: {
+            print(userBuyOffers)
+        })
         ScrollView {
             ForEach(userBuyOffers) { buyOffer in
                 Spacer()

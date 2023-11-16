@@ -30,7 +30,7 @@ struct BuyCard: View {
                 .opacity(0.8)
                 .clipShape(RoundedRectangle(cornerRadius:15))
                 Text("Total to beat: \(bestBuyOffer?.total ?? 0)")
-                NavigationLink(destination: PlaceBidView(minUnits: sellOffer.minEnergyUnits, maxUnits: sellOffer.maxEnergyUnits, minPrice: sellOffer.minPrice, numberOfUnits: sellOffer.minEnergyUnits, price: sellOffer.minPrice) , label: {
+                NavigationLink(destination: PlaceBidView(sellId: sellOffer.id,minUnits: sellOffer.minEnergyUnits, maxUnits: sellOffer.maxEnergyUnits, minPrice: sellOffer.minPrice, numberOfUnits: sellOffer.minEnergyUnits, price: sellOffer.minPrice) , label: {
                         // Button(action: {
                         //                }, label: {
                     Text("Bid")

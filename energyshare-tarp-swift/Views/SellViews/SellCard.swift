@@ -43,7 +43,13 @@ struct SellCard: View {
                     Text("Total: \(bestBid.total)")
                         .font(.headline)
                     
-                    Button(action: {}, label: {
+                    Button(action: {
+                        DummyData.buyOfferList.removeAll(where: {$0.sellOfferId == sellOffer.id})
+                        // remove the sell offer from the list
+                        DummyData.sellOfferList.removeAll(where: {$0.id == sellOffer.id})
+                        // remove corresponding buy offers where sell offer id is this one
+                        
+                    }, label: {
                         Text("Accept")
                             .padding()
                             .background(Color.green)

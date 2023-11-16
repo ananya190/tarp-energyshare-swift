@@ -32,7 +32,7 @@ struct SellView: View {
                 .padding(.horizontal)
                 ScrollView {
                     ForEach(userSellOffers) { sellOffer in
-                        SellCard(sellOffer: sellOffer, bestBid: buyOffers.first(where: {$0.id == sellOffer.bestBuyOfferId})!)
+                        SellCard(sellOffer: sellOffer, bestBid: buyOffers.first(where: {$0.id == sellOffer.bestBuyOfferId}) ?? BuyOffer(id: 0, buyer: "", sellOfferId: sellOffer.id, numberOfEnergyUnits: 0, price: 0))
                     }
                 }
             }

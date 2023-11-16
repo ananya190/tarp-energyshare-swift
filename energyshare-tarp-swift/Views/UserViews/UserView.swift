@@ -1,13 +1,14 @@
-//
-//  UserView.swift
-//  energyshare-tarp-swift
-//
-//  Created by Ananya George on 11/7/23.
-//
+    //
+    //  UserView.swift
+    //  energyshare-tarp-swift
+    //
+    //  Created by Ananya George on 11/7/23.
+    //
 
 import SwiftUI
 
 struct UserView: View {
+    @EnvironmentObject var metaMaskRepo: MetaMaskRepo
     @State var walletConnected: Bool = false
     @State var metersConnected: [SmartMeter] = []
     var body: some View {
@@ -18,23 +19,25 @@ struct UserView: View {
                 .padding(40)
             Spacer()
             
-            if walletConnected {
+            if !metaMaskRepo.ethAddress.isEmpty {
                 VStack {
-                    Text("wallet details")
+                    Text("Address: \(metaMaskRepo.ethAddress)")
+                        .fontWeight(.bold)
                         .padding()
                     Button(action: {
-                    walletConnected.toggle()
-                }, label: {
-                    Text("Disconnect your wallet")
-                })
+                    }, label: {
+                        Text("Disconnect your wallet")
+                    })
+                    .buttonStyle(.borderedProminent)
                 }
                 
             } else {
                 Button(action: {
-                    walletConnected.toggle()
+                    metaMaskRepo.connectToDapp()
                 }, label: {
                     Text("Connect your wallet")
                 })
+                .buttonStyle(.borderedProminent)
             }
             
             if metersConnected.isEmpty {
@@ -44,9 +47,9 @@ struct UserView: View {
                     Text("Add meter")
                 })
             } else {
-                    ForEach($metersConnected) { meter in
-                        Text("\(meter.id)")
-                    }
+                ForEach($metersConnected) { meter in
+                    Text("\(meter.id)")
+                }
                 Button(action: {
                     metersConnected.append(SmartMeter(id: UUID(), name: "Meter x", coordinates: SmartMeter.Coordinates(latitude: 100, longitude: 100), energyGenerated: 13, energyToSpare: 6))
                 }, label: {

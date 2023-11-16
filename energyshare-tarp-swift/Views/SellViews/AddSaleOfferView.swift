@@ -34,6 +34,7 @@ struct AddSaleOfferView: View {
                     }
                 }
                 Button(action: {
+                    DummyData.sellOfferList.append(SellOffer(id: DummyData.sellOfferList.count + 1, seller: "xyz123", minEnergyUnits: minUnits, maxEnergyUnits: maxUnits, minPrice: minPrice, bestBuyOfferId: 0, buyOfferIds: [], sold: false))
                     self.presentationMode.wrappedValue.dismiss()
                 }, label: {
                     HStack {
