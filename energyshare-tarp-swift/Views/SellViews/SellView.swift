@@ -10,13 +10,14 @@ import SwiftUI
 struct SellView: View {
     var userSellOffers: [SellOffer] = DummyData.sellOfferList.filter({ $0.seller == "abc123"})
     var buyOffers: [BuyOffer] = DummyData.buyOfferList
+    @State var update: Bool = false
     var body: some View {
         NavigationStack {
             VStack {
                 Text("Sale Offers")
                     .font(.headline)
                     .padding()
-                NavigationLink(destination: AddSaleOfferView(), label: {
+                NavigationLink(destination: AddSaleOfferView(update: $update), label: {
                     HStack {
                         Spacer()
                         Text("+")
@@ -32,7 +33,7 @@ struct SellView: View {
                 .padding(.horizontal)
                 ScrollView {
                     ForEach(userSellOffers) { sellOffer in
-                        SellCard(sellOffer: sellOffer, bestBid: buyOffers.first(where: {$0.id == sellOffer.bestBuyOfferId}) ?? BuyOffer(id: 0, buyer: "", sellOfferId: sellOffer.id, numberOfEnergyUnits: 0, price: 0))
+                        SellCard(update: $update,sellOffer: sellOffer, bestBid: buyOffers.first(where: {$0.id == sellOffer.bestBuyOfferId}) ?? BuyOffer(id: 0, buyer: "", sellOfferId: sellOffer.id, numberOfEnergyUnits: 0, price: 0))
                     }
                 }
             }

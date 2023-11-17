@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AddSaleOfferView: View {
-    
+    @Binding var update: Bool
     @State var minUnits: Int = 1
     @State var maxUnits: Int = 1
     @State var minPrice: Int = 1
@@ -34,7 +34,18 @@ struct AddSaleOfferView: View {
                     }
                 }
                 Button(action: {
-                    DummyData.sellOfferList.append(SellOffer(id: DummyData.sellOfferList.count + 1, seller: "xyz123", minEnergyUnits: minUnits, maxEnergyUnits: maxUnits, minPrice: minPrice, bestBuyOfferId: 0, buyOfferIds: [], sold: false))
+                    var newId: Int {
+                        let ids = DummyData.sellOfferList.map { $0.id }
+                        while true {
+                            var temp = Int.random(in: 0..<1000)
+                            if !ids.contains(temp) {
+                                return temp
+                            }
+                        }
+                    }
+                    DummyData.sellOfferList.append(SellOffer(id: newId, seller: "abc123", minEnergyUnits: minUnits, maxEnergyUnits: maxUnits, minPrice: minPrice, bestBuyOfferId: 0, buyOfferIds: [], sold: false))
+                    print(DummyData.sellOfferList)
+                    update.toggle()
                     self.presentationMode.wrappedValue.dismiss()
                 }, label: {
                     HStack {
@@ -53,6 +64,6 @@ struct AddSaleOfferView: View {
     
 }
 
-#Preview {
-    AddSaleOfferView()
-}
+//#Preview {
+//    AddSaleOfferView()
+//}

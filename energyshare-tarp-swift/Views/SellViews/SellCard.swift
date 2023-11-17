@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SellCard: View {
+    @Binding var update: Bool
     var sellOffer: SellOffer = DummyData.sellOfferList[0]
     var bestBid: BuyOffer = DummyData.buyOfferList[0]
     var body: some View {
@@ -48,6 +49,9 @@ struct SellCard: View {
                         // remove the sell offer from the list
                         DummyData.sellOfferList.removeAll(where: {$0.id == sellOffer.id})
                         // remove corresponding buy offers where sell offer id is this one
+                        print(DummyData.sellOfferList)
+                        print(DummyData.buyOfferList)
+                        update.toggle()
                         
                     }, label: {
                         Text("Accept")
@@ -70,6 +74,6 @@ struct SellCard: View {
     }
 }
 
-#Preview {
-    SellCard()
-}
+//#Preview {
+//    SellCard()
+//}
